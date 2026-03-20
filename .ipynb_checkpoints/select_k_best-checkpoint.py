@@ -131,8 +131,8 @@ data_ckd= data_original
 data_ckd
 
 # ip op split 
-indep_x=data_ckd.drop(['classification_ckd','classification_notckd'],axis=1)
-dep_y = data_ckd['classification_ckd']
+indep_x=data_ckd.drop(['classification_notckd'],axis=1)
+dep_y = data_ckd['classification_notckd']
 
 # feature selection 
 kBest=selectkbest(indep_x,dep_y,5)
