@@ -130,8 +130,11 @@ data_original = pd.read_csv('preprocessed_CKD.csv')
 data_ckd= data_original
 data_ckd
 
+data_ckd=pd.get_dummies(data_ckd,drop_first=True,dtype=int)
+data_ckd.head()
+
 # ip op split 
-indep_x=data_ckd.drop(['classification_notckd'],axis=1)
+indep_x=data_ckd.drop('classification_notckd',axis=1)
 dep_y = data_ckd['classification_notckd']
 
 # feature selection 
@@ -164,4 +167,5 @@ classifier,accuracy,cm,classi_report,x_test,y_test=random_forest(x_train,y_train
 accrf.append(accuracy)
 
 
-result = selectk_classification(acclog,accsvml,accsvmnl,accknn,accnav,accdes,accrf)
+result_classification = selectk_classification(acclog,accsvml,accsvmnl,accknn,accnav,accdes,accrf)
+print(result_classification)
