@@ -1,10 +1,10 @@
 
 
-# Dimensionality Reduction and Classification – Project Overview
+# Dimensionality Reduction and Classification – Hands On Overview
 
-## Project Objective
+## Hands On Objective
 
-This project demonstrates the application of **dimensionality reduction techniques** to improve machine learning model performance. Dimensionality reduction reduces the number of features while preserving important information, addresses the **curse of dimensionality**, and enhances computational efficiency.
+This Hands On demonstrates the application of **dimensionality reduction techniques** to improve machine learning model performance. Dimensionality reduction reduces the number of features while preserving important information, addresses the **curse of dimensionality**, and enhances computational efficiency.
 
 Techniques used:
 
